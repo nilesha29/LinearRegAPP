@@ -36,5 +36,5 @@ step8: One the cloud shell is activated go to your cloud shell and clone your gi
 step9: On the cloud shell itself get into/navigate the project folder
 
 To disable the application: App Engine --> setting
-
+To shutdown/delete the application: IAM -> Setting --> Shut Down
 
