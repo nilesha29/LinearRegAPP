@@ -1,0 +1,28 @@
+step1: Create a new anaconda environment
+        conda create -n LinearRegressionApp python==3.6.9
+
+step2: Install the requirements file
+        pip install -r requirements.txt
+
+step3: Create a file name as Procfile
+        There is no extension for this Procfile
+        P should be capital
+        write this in Procfile --> web: gunicorn app:app
+        When we try to deploy the application on cloud, the cloud needs to know that how to execute, which is the main file,
+        what are the commands I should be using to execute the file. So for that we are supposed to tell that
+        this the web file so web is mention their.
+        first app is the file name.
+        On Heroku deployment the main file name should supposed to be app.py if app.py file is not available then create it.
+        If the code is available in .py file then Copy the entire code from .py file and paste it to app.py.
+        Here copy the entire code from main.py file and paste it to app.py file.
+        Second app is for the flask object
+        Here the flask object is application, so we are supposed to make it app only.
+        e.g., app = Flask(__name__)
+
+step4: Initialise your project as git project
+        git init
+
+Step5: Start tracking all the project files
+        git add .
+
+In git initialization environment doesn’t matter.
